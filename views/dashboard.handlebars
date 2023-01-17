@@ -1,0 +1,19 @@
+<div id="card-container">
+  {{#each post as |post|}}
+    <div class="card column">
+      <div class="card-content">
+        <p class="title">
+          <p>{{post.title}}</p>
+          <p>Posted by {{post.user}} on {{post.date}}</p>
+        </p>
+      </div>
+
+      <footer class="card-footer">
+        <span>
+          {{post.content}}
+        </span>
+      </footer>
+    </div>
+
+  {{/each}}
+</div>
